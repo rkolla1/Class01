@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+
+    <!--<ImageView
+        android:id="@+id/imageView_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@mipmap/ic_launcher_round" />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageView_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="83dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/date_chat"
+        android:layout_width="173dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="56dp"
+        android:layout_toEndOf="@+id/imageView_chat"
+        android:layout_toRightOf="@+id/imageView_chat"
+        android:background="@drawable/rounded_corner"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/time_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="234dp"
+        android:layout_marginLeft="234dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/rounded_corner"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/chat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/imageView_chat"
+        android:layout_toRightOf="@+id/imageView_chat"
+        android:background="@drawable/rounded_corner"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/msg_chat"
+        android:layout_width="272dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="102dp"
+        android:background="@drawable/rounded_corner"
+
+        android:text="TextView"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/likes"
+        android:layout_width="78dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="206dp"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="102dp"
+        android:background="@drawable/rounded_corner"
+
+        android:text="TextView"
+        android:textColor="#fff" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="95dp"
+        android:layout_toEndOf="@+id/msg_chat"
+        android:layout_toRightOf="@+id/msg_chat"
+        app:srcCompat="@drawable/ic_action_like"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</RelativeLayout>
